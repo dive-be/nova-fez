@@ -6,8 +6,10 @@
 .phpunit.result.cache
 build
 composer.lock
+yarn.lock
 coverage
 docs
 phpunit.xml
 phpstan.neon
 vendor
+node_modules

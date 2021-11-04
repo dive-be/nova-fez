@@ -9,5 +9,9 @@
 /.editorconfig           export-ignore
 /.php-cs-fixer.dist.php  export-ignore
 /phpstan.neon.dist       export-ignore
-/testbench.yaml          export-ignore
 /CONTRIBUTING.md         export-ignore
+/.prettierignore         export-ignore
+/.prettierrc             export-ignore
+/lint-staged.config.js   export-ignore
+/package.json            export-ignore
+/webpack.mix.js          export-ignore
