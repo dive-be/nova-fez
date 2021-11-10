@@ -2,6 +2,7 @@
 
 namespace Dive\Fez\Nova;
 
+use Dive\Fez\FezServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Nova;
 
@@ -12,5 +13,10 @@ class FieldServiceProvider extends ServiceProvider
         Nova::serving(function () {
             Nova::script('fez', __DIR__ . '/../dist/js/field.js');
         });
+    }
+
+    public function register()
+    {
+        $this->app->register(FezServiceProvider::class);
     }
 }
