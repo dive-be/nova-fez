@@ -9,7 +9,11 @@
                 <google v-bind="field.value" />
             </toggle>
 
-            <toggle class="mb-2" ctx="Twitter">
+            <toggle class="mb-2" ctx="Linkedin">
+                <linkedin v-bind="field.value" />
+            </toggle>
+
+            <toggle ctx="Twitter">
                 <twitter v-bind="field.value" />
             </toggle>
         </template>
@@ -19,6 +23,7 @@
 <script>
 import Facebook from './Preview/Facebook';
 import Google from './Preview/Google';
+import Linkedin from './Preview/Linkedin';
 import Toggle from './Toggle';
 import Twitter from './Preview/Twitter';
 
@@ -26,6 +31,7 @@ export default {
     components: {
         facebook: Facebook,
         google: Google,
+        linkedin: Linkedin,
         toggle: Toggle,
         twitter: Twitter,
     },
