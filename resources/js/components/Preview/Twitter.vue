@@ -33,7 +33,6 @@ export default {
 }
 
 .twitter__description {
-    height: 2.6em;
     max-height: 2.6em;
     margin-top: 0.32333em;
     line-height: 1.3em;
