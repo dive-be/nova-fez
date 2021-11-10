@@ -1,17 +1,15 @@
 <template>
     <div>
-        <div v-if="expanded">
-            <slot></slot>
-        </div>
-
         <a
             @click="toggle"
             class="cursor-pointer dim inline-block text-primary font-bold"
-            :class="{ 'mt-6': expanded }"
+            :class="{ 'mb-2': expanded }"
             aria-role="button"
         >
             {{ label }}
         </a>
+
+        <slot v-if="expanded"></slot>
     </div>
 </template>
 
