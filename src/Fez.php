@@ -12,6 +12,14 @@ class Fez extends Field
 {
     public $component = 'fez';
 
+    public $showOnCreation = false;
+
+    public $showOnDetail = true;
+
+    public $showOnIndex = false;
+
+    public $showOnUpdate = false;
+
     public $onlyOnDetail = true;
 
     public function resolve($resource, $attribute = null)
