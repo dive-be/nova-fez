@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "dive-be/laravel-fez": "^0.3",
+        "dive-be/laravel-fez": "^0.4",
         "laravel/nova": "^3.0"
     },
     "require-dev": {
