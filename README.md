@@ -1,12 +1,15 @@
-# A Nova field that integrates with Fez
+# A supplemental Nova field for use with Fez
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/dive-be/nova-fez.svg?style=flat-square)](https://packagist.org/packages/dive-be/nova-fez)
 
-⚠️ Minor releases of this package may cause breaking changes as it has no stable release yet.
+This package allows you to **preview** social media posts / search engine results right in your `Metable` resources.
 
-## What problem does this package solve?
+> It is, and will stay an approximation.
 
-Optionally describe why someone would want to use this package.
+## Requirements
+
+- `dive-be/laravel-fez: ^0.4`
+- `laravel/nova: ^3.0`
 
 ## Installation
 
@@ -17,13 +20,20 @@ composer require dive-be/nova-fez
 ```
 ## Usage
 
-TODO
+```php
+use Dive\Fez\Nova\Fez;
 
-## Testing
-
-```bash
-composer test
+public function fields(Request $request)
+{
+    return [
+        Fez::make('SEO'),
+    ];   
+}
 ```
+
+## Screenshots
+
+![Detail View](./docs/detail.png)
 
 ## Changelog
 
