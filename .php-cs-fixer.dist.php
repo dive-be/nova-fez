@@ -3,10 +3,7 @@
 $finder = Symfony\Component\Finder\Finder::create()
     ->exclude('vendor')
     ->name('*.php')
-    ->in([
-        __DIR__ . '/src',
-        __DIR__ . '/tests',
-    ])
+    ->in(__DIR__)
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
