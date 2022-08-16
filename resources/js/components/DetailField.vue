@@ -1,5 +1,5 @@
 <template>
-    <panel-item :field="field">
+    <PanelItem :field="field">
         <template slot="value">
             <toggle class="mb-2" ctx="Facebook">
                 <facebook v-bind="field.value" />
@@ -17,7 +17,7 @@
                 <twitter v-bind="field.value" />
             </toggle>
         </template>
-    </panel-item>
+    </PanelItem>
 </template>
 
 <script>
